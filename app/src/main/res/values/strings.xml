@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyUCC</string>
+
+    <string-array name="facultyStaff">
+        <item>Ms. Natalie Rose, Head of Department(HOD)</item>
+        <item>Ms. Winsome Bennett, Programme Co-ordinator </item>
+        <item>Mr. Elton Austin, Programme Officer</item>
+        <item>Mr. Otis Osbourne, Lecturer</item>
+        <item>Ms. Karen Wilson, Lecturer</item>
+    </string-array>
+
+</resources>
