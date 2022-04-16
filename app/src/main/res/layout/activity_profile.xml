@@ -31,24 +31,39 @@
         app:layout_constraintVertical_bias="0.138"
         app:srcCompat="@drawable/ucc" />
 
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="413dp"
+        android:layout_height="46dp"
+        android:background="@color/purple_700"
+        android:paddingBottom="8dp"
+        android:text="Faculty Job Title"
+        android:textAlignment="center"
+        android:textColor="#FFFCFC"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.226" />
+
     <ImageView
         android:id="@+id/ProfileImage"
-        android:layout_width="145dp"
-        android:layout_height="168dp"
+        android:layout_width="166dp"
+        android:layout_height="164dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.323"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.387" />
 
     <TextView
         android:id="@+id/ProfileName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
-        android:text="TextView"
+        android:text="Faculty Staff Name"
         android:textAlignment="textStart"
         android:textColor="#FBFBFB"
         android:textSize="20sp"
@@ -57,35 +72,35 @@
         app:layout_constraintHorizontal_bias="0.193"
         app:layout_constraintStart_toEndOf="@+id/ProfileImage"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271" />
+        app:layout_constraintVertical_bias="0.35" />
 
     <TextView
         android:id="@+id/ProfileEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:text="TextView"
+        android:text="Contact Number"
         android:textColor="#FAF9F9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toEndOf="@+id/ProfileImage"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.383" />
+        app:layout_constraintVertical_bias="0.483" />
 
     <TextView
         android:id="@+id/ProfileContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:text="TextView"
+        android:text="Email Address"
         android:textColor="#FAF9F9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toEndOf="@+id/ProfileImage"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.328" />
+        app:layout_constraintVertical_bias="0.431" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/facultyEmail"

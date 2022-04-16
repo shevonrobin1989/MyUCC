@@ -1,12 +1,30 @@
 <resources>
     <string name="app_name">MyUCC</string>
+    <string name="hyperlink"><a href="https://ucc.edu.jm/apply/undergraduate"> Apply Online</a></string>
 
     <string-array name="facultyStaff">
         <item>Ms. Natalie Rose, Head of Department(HOD)</item>
         <item>Ms. Winsome Bennett, Programme Co-ordinator </item>
         <item>Mr. Elton Austin, Programme Officer</item>
+        <item>Mrs. Naomi Uffer-Collington, Administrative Assistant</item>
         <item>Mr. Otis Osbourne, Lecturer</item>
         <item>Ms. Karen Wilson, Lecturer</item>
     </string-array>
 
+    <string-array name="facultyCourses">
+        <item>ITT201 Data Communications and Network I</item>
+        <item>ITT403 Data Communications and Network II</item>
+        <item>ITT313 Fundamentals of Computer Graphics Design</item>
+        <item>ITT301 Data Structures and File Management II</item>
+        <item>GIS300 Geographical Information Systems</item>
+        <item>ITT303 Programming Design using Java</item>
+        <item>ITT312 Introduction to Robotics</item>
+        <item>ITT410 Linux+</item>
+        <item>ITT309 Computer Security</item>
+        <item>ITT422 CyberSecurity Analysis+</item>
+    </string-array>
+
+    <string-array name="admissionRequirement">
+        <item>"To be unconditionally admitted to complete UCC undergraduate programmes, individuals should possess a minimum of five (5) subjects at the GCE or CSEC level (including the mandatory English Language and Mathematics) at grades A, B, C or 1, 2, 3 respectively. A CSEC pass at level 3 must have been obtained since 1998.\n\n Candidates who have a minimum of 4 CXCs can also apply pending the outstanding CXC subjects or can opt to do UCC replacement courses Core Mathematics, English for Academic Purpose and Fundamentals of Accounting.\n\n Candidates can opt to apply under the Mature Entry option. To be accepted, applicants must be working for 5 years or more and be at a minimum age of 25 years. Academic qualifications, a detailed resume, a job letter and 3 professional references will be required."</item>
+    </string-array>
 </resources>

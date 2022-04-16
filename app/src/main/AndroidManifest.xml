@@ -10,16 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyUCC">
         <activity
+            android:name=".timetable"
+            android:exported="false" />
+        <activity
+            android:name=".courses"
+            android:exported="false" />
+        <activity
             android:name=".staffdirectory"
             android:exported="false" />
         <activity
-            android:name=".Details"
+            android:name=".Admission"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyCourse"
             android:exported="false" />
         <activity
             android:name=".FacultyProfiles"
-            android:exported="false" />
-        <activity
-            android:name=".FacultyDirectory"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

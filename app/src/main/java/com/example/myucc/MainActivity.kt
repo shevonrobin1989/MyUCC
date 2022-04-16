@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
@@ -34,14 +35,14 @@ class MainActivity : AppCompatActivity() {
         //Launches the Courses Activity from the Image
         val  coursesImage: ImageButton = findViewById(R.id.itCourses)
         coursesImage.setOnClickListener{
-            val intent = Intent()
+            val intent = Intent(this@MainActivity, courses::class.java)
             startActivity(intent)
         }
 
         //Launches the Courses Activity from the Button
         val  courses: Button = findViewById(R.id.btnCourse)
         courses.setOnClickListener{
-            val intent = Intent()
+            val intent = Intent(this@MainActivity, com.example.myucc.courses::class.java)
             startActivity(intent)
         }
 
@@ -62,14 +63,14 @@ class MainActivity : AppCompatActivity() {
         //Launches the Admission Activity from the Image
         val  admissionImage: ImageButton = findViewById(R.id.itAdmission)
         admissionImage.setOnClickListener{
-            val intent = Intent()
+            val intent = Intent(this@MainActivity, Admission::class.java)
             startActivity(intent)
         }
 
         //Launches the Admission Activity from the Button
         val  admission: Button = findViewById(R.id.btnAdmission)
         admission.setOnClickListener{
-            val intent = Intent()
+            val intent = Intent(this@MainActivity, Admission::class.java)
             startActivity(intent)
         }
 
