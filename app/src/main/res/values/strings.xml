@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">MyUCC</string>
+    <string name="hyperlink"><a href = "https://ucc.edu.jm/apply/undergraduate"> Apply Online</a></string>
 
     <string-array name="facultyStaff">
         <item>Ms. Natalie Rose, Head of Department(HOD)</item>
