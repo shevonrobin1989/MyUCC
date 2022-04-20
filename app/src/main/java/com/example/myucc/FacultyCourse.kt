@@ -53,6 +53,83 @@ class FacultyCourse: AppCompatActivity() {
                     Toast.makeText(this,"No course code info provided.",Toast.LENGTH_SHORT).show()
                 }
             }
+            "3"->{
+                courseCode= "ITT301"
+                if (courseCode.isNotEmpty())
+                {
+                    readdata(courseCode)
+                }
+                else
+                {
+                    Toast.makeText(this,"No course code info provided.",Toast.LENGTH_SHORT).show()
+                }
+            }
+            "4"->{
+                courseCode= "GIS300"
+                if (courseCode.isNotEmpty())
+                {
+                    readdata(courseCode)
+                }
+                else
+                {
+                    Toast.makeText(this,"No course code info provided.",Toast.LENGTH_SHORT).show()
+                }
+            }
+            "5"->{
+                courseCode= "ITT303"
+                if (courseCode.isNotEmpty())
+                {
+                    readdata(courseCode)
+                }
+                else
+                {
+                    Toast.makeText(this,"No course code info provided.",Toast.LENGTH_SHORT).show()
+                }
+            }
+            "6"->{
+                courseCode= "ITT312"
+                if (courseCode.isNotEmpty())
+                {
+                    readdata(courseCode)
+                }
+                else
+                {
+                    Toast.makeText(this,"No course code info provided.",Toast.LENGTH_SHORT).show()
+                }
+            }
+            "7"->{
+                courseCode= "ITT410"
+                if (courseCode.isNotEmpty())
+                {
+                    readdata(courseCode)
+                }
+                else
+                {
+                    Toast.makeText(this,"No course code info provided.",Toast.LENGTH_SHORT).show()
+                }
+            }
+            "8"->{
+                courseCode= "ITT309"
+                if (courseCode.isNotEmpty())
+                {
+                    readdata(courseCode)
+                }
+                else
+                {
+                    Toast.makeText(this,"No course code info provided.",Toast.LENGTH_SHORT).show()
+                }
+            }
+            "9"->{
+                courseCode= "ITT422"
+                if (courseCode.isNotEmpty())
+                {
+                    readdata(courseCode)
+                }
+                else
+                {
+                    Toast.makeText(this,"No course code info provided.",Toast.LENGTH_SHORT).show()
+                }
+            }
         }
     }
 

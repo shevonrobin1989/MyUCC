@@ -25,10 +25,10 @@
         android:layout_height="52dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.156"
+        app:layout_constraintVertical_bias="0.157"
         app:srcCompat="@drawable/ucc" />
 
     <ImageButton
@@ -42,20 +42,20 @@
         app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.337"
+        app:layout_constraintVertical_bias="0.299"
         app:srcCompat="@drawable/faculty_icon" />
 
     <Button
         android:id="@+id/btnDirectory"
-        android:layout_width="307dp"
-        android:layout_height="45dp"
+        android:layout_width="301dp"
+        android:layout_height="42dp"
         android:text="Faculty Directory"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.142"
-        app:layout_constraintStart_toEndOf="@+id/itDirectory"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.346" />
+        app:layout_constraintVertical_bias="0.31" />
 
     <ImageButton
         android:id="@+id/itCourses"
@@ -68,45 +68,47 @@
         app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.465"
+        app:layout_constraintVertical_bias="0.446"
         app:srcCompat="@drawable/courses_icon" />
 
     <Button
         android:id="@+id/btnCourse"
-        android:layout_width="309dp"
-        android:layout_height="49dp"
+        android:layout_width="301dp"
+        android:layout_height="42dp"
         android:text="Courses"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
-        app:layout_constraintStart_toEndOf="@+id/itCourses"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.467" />
+        app:layout_constraintVertical_bias="0.445" />
 
     <ImageButton
         android:id="@+id/itTimetables"
         android:layout_width="67dp"
         android:layout_height="73dp"
-        android:layout_marginStart="16dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.594"
-        app:srcCompat="@drawable/timetable_icon" />
+        app:layout_constraintVertical_bias="0.582"
+        app:srcCompat="@drawable/timetable_icon"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/btnTimetable"
-        android:layout_width="305dp"
-        android:layout_height="47dp"
+        android:layout_width="301dp"
+        android:layout_height="42dp"
         android:text="Timetables"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/itTimetables"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.592" />
+        app:layout_constraintVertical_bias="0.579" />
 
     <ImageButton
         android:id="@+id/itAdmission"
@@ -119,35 +121,65 @@
         app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.721"
+        app:layout_constraintVertical_bias="0.734"
         app:srcCompat="@drawable/admission_icon" />
 
     <Button
         android:id="@+id/btnAdmission"
-        android:layout_width="309dp"
-        android:layout_height="49dp"
+        android:layout_width="301dp"
+        android:layout_height="42dp"
         android:text="Admission"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/itAdmission"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.714" />
+        app:layout_constraintVertical_bias="0.722" />
 
     <ImageButton
-        android:id="@+id/SocialMedia"
-        android:layout_width="189dp"
-        android:layout_height="80dp"
+        android:id="@+id/facebook_link"
+        android:layout_width="60dp"
+        android:layout_height="57dp"
         android:adjustViewBounds="true"
         android:clickable="true"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageButton
+        android:id="@+id/instagram_link"
+        android:layout_width="60dp"
+        android:layout_height="57dp"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.328"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.87"
-        app:srcCompat="@drawable/social_media" />
+        app:srcCompat="@drawable/instragramnew" />
+
+    <ImageButton
+        android:id="@+id/twitter_link"
+        android:layout_width="60dp"
+        android:layout_height="57dp"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872"
+        app:srcCompat="@drawable/twitter" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/Email"

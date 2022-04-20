@@ -84,17 +84,15 @@ class FacultyProfiles: AppCompatActivity() {
 
         val sendCall: FloatingActionButton = findViewById(R.id.facultyPhone)
         sendCall.setOnClickListener{
-            val dialIntent = Intent(Intent.ACTION_DIAL)
-            dialIntent.data = Uri.parse(call)
-            startActivity(dialIntent)
+            val dialIntent = Intent(Intent.ACTION_DIAL, Uri.parse(call))
+            startActivity(Intent(Intent.createChooser(dialIntent,"Dial Number")))
         }
 
         //Sends email to preset address when FAB is clicked
         val sendEmail: FloatingActionButton = findViewById(R.id.facultyEmail)
         sendEmail.setOnClickListener {
-            val intent = Intent(Intent.ACTION_SEND, Uri.fromParts("mailto", mail, null))
-            intent.putExtra(Intent.EXTRA_EMAIL, mail)
-            startActivity(intent)
+            val intent = Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto",mail,null))
+            startActivity(Intent(Intent.createChooser(intent, "Send Email..")))
         }
 
 

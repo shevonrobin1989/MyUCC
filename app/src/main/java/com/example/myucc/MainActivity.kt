@@ -1,17 +1,17 @@
 package com.example.myucc
 
 import android.content.Intent
+import android.content.ActivityNotFoundException
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
 
-    private val mail: String = "ucconline@ucc.edu.jm"
+    private val mail: String = "ithod@ucc.edu.jm"
     private val url: String = "https://ucc.edu.jm/apply/"
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,14 +49,14 @@ class MainActivity : AppCompatActivity() {
         //Launches the Timetable Activity from the Image
         val  timetableImage: ImageButton = findViewById(R.id.itTimetables)
         timetableImage.setOnClickListener{
-            val intent = Intent()
+            val intent = Intent(this@MainActivity, timetable::class.java)
             startActivity(intent)
         }
 
         //Launches the Timetable Activity from the Button
         val  timetable: Button = findViewById(R.id.btnTimetable)
         timetable.setOnClickListener{
-            val intent = Intent()
+            val intent = Intent(this@MainActivity, com.example.myucc.timetable::class.java)
             startActivity(intent)
         }
 
@@ -74,20 +74,53 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val ivfacebook: ImageButton = findViewById(R.id.facebook_link)
+        val ivinstagram: ImageButton = findViewById(R.id.instagram_link)
+        val ivtwitter: ImageButton = findViewById(R.id.twitter_link)
+
         //Launches the Social Media Activity from the Image
-        val  socialmediaImage: ImageButton = findViewById(R.id.SocialMedia)
-        socialmediaImage.setOnClickListener{
-            val intent = Intent()
-            startActivity(intent)
+        ivfacebook.setOnClickListener{
+            val sAppLink = "fb://page/237564710351658"
+            val sPackage = "com.facebook.katana"
+            val sWebLink = "https://www.facebook.com/uccjamaica/"
+            openLink(sAppLink, sPackage, sWebLink)
+        }
+        ivinstagram.setOnClickListener{
+            val sAppLink = "https://www.instagram.com/androidcoding_"
+            val sPackage = "com.instagram.android"
+            val sWebLink = "https://www.instagram.com/uccjamaica/?hl=en"
+            openLink(sAppLink, sPackage, sWebLink)
+        }
+        ivtwitter.setOnClickListener{
+            val sAppLink = "twitter://user?screen_name=AndroidCoding_"
+            val sPackage = "com.twitter.android"
+            val sWebLink = "https://twitter.com/UCCjamaica"
+            openLink(sAppLink, sPackage, sWebLink)
         }
 
         //Enable the user to send email to hod address when clicked
         val  hodEmail: FloatingActionButton = findViewById(R.id.Email)
         hodEmail.setOnClickListener{
             val intent = Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto",mail,null))
-            intent.putExtra(Intent.EXTRA_EMAIL, mail)
-            startActivity(intent)
+            startActivity(Intent(Intent.createChooser(intent, "Send Email..")))
         }
 
+
+    }
+    private fun openLink(sAppLink: String, sPackage: String, sWebLink: String) {
+        try {
+            val uri = Uri.parse(sAppLink)
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = uri
+            intent.setPackage(sPackage)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
+        } catch (activityNotFoundException: ActivityNotFoundException) {
+            val uri = Uri.parse(sWebLink)
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = uri
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
+        }
     }
 }

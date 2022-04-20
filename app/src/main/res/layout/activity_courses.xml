@@ -50,12 +50,12 @@
 
     <ListView
         android:id="@+id/CourseList"
-        android:layout_width="401dp"
-        android:layout_height="368dp"
+        android:layout_width="412dp"
+        android:layout_height="369dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/department"
-        app:layout_constraintVertical_bias="0.63" />
+        app:layout_constraintVertical_bias="0.415" />
 </androidx.constraintlayout.widget.ConstraintLayout>
