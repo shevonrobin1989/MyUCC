@@ -25,13 +25,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        //Launches the Directory Activity from the Button
-        val directory: Button = findViewById(R.id.btnDirectory)
-        directory.setOnClickListener{
-            val intent = Intent(this@MainActivity, staffdirectory::class.java)
-            startActivity(intent)
-        }
-
         //Launches the Courses Activity from the Image
         val  coursesImage: ImageButton = findViewById(R.id.itCourses)
         coursesImage.setOnClickListener{
@@ -39,10 +32,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        //Launches the Courses Activity from the Button
-        val  courses: Button = findViewById(R.id.btnCourse)
-        courses.setOnClickListener{
-            val intent = Intent(this@MainActivity, com.example.myucc.courses::class.java)
+        //Launches the Admission Activity from the Image
+        val  admissionImage: ImageButton = findViewById(R.id.itAdmission)
+        admissionImage.setOnClickListener{
+            val intent = Intent(this@MainActivity, Admission::class.java)
             startActivity(intent)
         }
 
@@ -53,17 +46,24 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //Launches the Directory Activity from the Button
+        val directory: Button = findViewById(R.id.btnDirectory)
+        directory.setOnClickListener{
+            val intent = Intent(this@MainActivity, staffdirectory::class.java)
+            startActivity(intent)
+        }
+
+        //Launches the Courses Activity from the Button
+        val  courses: Button = findViewById(R.id.btnCourse)
+        courses.setOnClickListener{
+            val intent = Intent(this@MainActivity, com.example.myucc.courses::class.java)
+            startActivity(intent)
+        }
+
         //Launches the Timetable Activity from the Button
         val  timetable: Button = findViewById(R.id.btnTimetable)
         timetable.setOnClickListener{
             val intent = Intent(this@MainActivity, com.example.myucc.timetable::class.java)
-            startActivity(intent)
-        }
-
-        //Launches the Admission Activity from the Image
-        val  admissionImage: ImageButton = findViewById(R.id.itAdmission)
-        admissionImage.setOnClickListener{
-            val intent = Intent(this@MainActivity, Admission::class.java)
             startActivity(intent)
         }
 
